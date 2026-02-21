@@ -1,4 +1,28 @@
-/* Typography */
+:root {
+	/* Primary */
+	--primary-font: "Quicksand", sans-serif;
+
+	--primary-color-1: #141b3e;
+	--primary-color-2: #1d2657;
+	--primary-color-3: #29367c;
+	--primary-color-4: #545e96;
+	--primary-color-5: #949bbe;
+	--primary-color-6: #d4d7e5;
+
+	/* B&W */
+	--bw-color-1: #fff;
+	--bw-color-2: #f3f3f3;
+	--bw-color-3: #e5e2e2;
+	--bw-color-4: #979999;
+	--bw-color-5: #717171;
+	--bw-color-6: #2e2e2e;
+
+	/* Other */
+	--green-color: #64a759;
+	--blue-color: #66a8e4;
+	--orange-color: #ec9617;
+}
+
 h1,
 h2,
 h3,
@@ -38,12 +62,73 @@ h3.h3l {
 	font-weight: 500;
 }
 
-.bd-1l,
-p,
-span,
-li {
+.bd-1l {
 	font-size: 1.75rem;
 	font-weight: 500;
 	line-height: 2.625rem;
 	letter-spacing: 0.035rem;
+}
+
+/* Default body 2 (bd-2l) */
+bd-2l,
+p,
+span,
+li {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 2.25;
+	letter-spacing: 0.03rem;
+}
+
+.bd-3l {
+	font-size: 1.25rem;
+	font-weight: 500;
+	line-height: 1.875;
+	letter-spacing: 0.025rem;
+}
+
+.caption,
+.caption-bold {
+	font-size: 1.2rem;
+	font-weight: 500;
+	line-height: 1.5rem;
+	letter-spacing: 0.02rem;
+}
+
+.caption-bold {
+	font-weight: 600;
+}
+
+.bd-1l-bold,
+.bd-2l-bold,
+.bd-3l-bold {
+	font-weight: 700;
+}
+
+.btn-1 {
+	position: relative;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--bw-color-1);
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 0.03rem;
+	border-radius: 1rem;
+	padding: 1.125rem 3rem;
+	min-width: 13rem;
+	background: var(--primary-color-1);
+	z-index: 0;
+}
+
+.btn-1 {
+	background: linear-gradient(to right, var(--primary-color-3) 50%, var(--primary-color-1) 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: background-position 0.35s ease;
+}
+
+.btn-1:hover {
+	background-position: left bottom;
 }
