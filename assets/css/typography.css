@@ -1,0 +1,49 @@
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+
+h1 {
+	font-size: 3.75rem;
+	line-height: 5.625rem;
+	letter-spacing: 0.075rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+	line-height: 3.75rem;
+	letter-spacing: 0.05rem;
+}
+
+h3 {
+	font-size: 2rem;
+	line-height: 3rem;
+	letter-spacing: 0.04rem;
+}
+
+h1.h1l {
+	font-weight: 500;
+}
+
+h2.h2l {
+	font-weight: 400;
+}
+
+h3.h3l {
+	font-weight: 500;
+}
+
+.bd-1l,
+p,
+span,
+li {
+	font-size: 1.75rem;
+	font-weight: 500;
+	line-height: 2.625rem;
+	letter-spacing: 0.035rem;
+}

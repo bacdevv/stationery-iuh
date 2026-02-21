@@ -1,0 +1,148 @@
+/* Common */
+
+input,
+textarea,
+select,
+button {
+	font-family: inherit;
+	font-style: inherit;
+	outline: none;
+	border: none;
+	width: inherit;
+	background: inherit;
+}
+
+.logo {
+	max-width: 100%;
+}
+
+:root {
+	/* Primary */
+	--primary-font: "Quicksand", sans-serif;
+
+	--primary-bg-color-1: #141b3e;
+	--primary-bg-color-2: #1d2657;
+	--primary-bg-color-3: #29367c;
+	--primary-bg-color-4: #545e96;
+	--primary-bg-color-5: #949bbe;
+	--primary-bg-color-6: #d4d7e5;
+
+	/* Secondary */
+	--secondary-color: ;
+	--secondary-font: ;
+	--secondary-bg-color: ;
+
+	/* Other */
+	--green-color: #64a759;
+	--blue-color: #66a8e4;
+	--orange-color: #ec9617;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: var(--primary-font);
+}
+
+body {
+	font-size: 1.6rem;
+	color: #000;
+}
+
+.main-content {
+	width: 153.5rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ================ Header ================ */
+.header {
+	height: 68.3rem;
+	background: #000;
+}
+
+.header-nav {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2rem 8rem;
+	background: #fff;
+}
+
+.header__search {
+	width: 35.25rem;
+	margin-left: 20rem;
+	padding: 1rem 1.25rem;
+	display: flex;
+	align-items: center;
+	gap: 1.52rem;
+	border-radius: 0.5rem;
+	background: #f3f3f3;
+}
+
+.header__search-input {
+	font-size: 1.4rem;
+}
+
+.header__language-choice {
+	margin-left: 3rem;
+	display: flex;
+	gap: 1.5rem;
+}
+
+.language-choice__vi {
+	position: relative;
+	display: flex;
+	align-items: center;
+	color: #979999;
+}
+
+.language-choice__vi::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: -0.6rem;
+	width: 0.2rem;
+	height: 80%;
+	background: #979999;
+	border-radius: 0.5rem;
+}
+
+.header__action-group {
+	display: flex;
+	margin: 0 3.5rem;
+	gap: 3.5rem;
+}
+
+.header__shopping-cart {
+	display: flex;
+}
+
+.header__img-wrap {
+	position: relative;
+}
+
+.header__img-wrap::before {
+	position: absolute;
+	top: -0.8rem;
+	right: -1rem;
+	content: "4";
+	display: inline-block;
+	width: 1.5rem;
+	height: 1.5rem;
+	padding: 1rem;
+	background: #29367c;
+	border-radius: 50%;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+}
+
+.header__shopping-amount {
+	margin-left: 1.56rem;
+	font-weight: 600;
+}
+
+/* ================ Footer ================ */
