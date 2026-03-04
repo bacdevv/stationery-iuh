@@ -254,3 +254,26 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
+
+
+/* DahLee coded */
+.next-img-box {
+	display: flex;
+}
+
+.next-img-box .box-item {
+	width: 2rem;
+	height: 0.8rem;
+	border-radius: 1.6rem;
+}
+
+.box1 {
+	margin-left: 43%;
+	background-color: var(--primary-color-3);
+}
+
+.box2,
+.box3 {
+	margin-left: 2rem;
+	background-color: var(--bw-color-3);
+}
