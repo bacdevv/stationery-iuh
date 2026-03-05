@@ -1,4 +1,4 @@
-/* Products */
+/* Products Start */
 
 .main--product .main-content {
 	width: 100%;
@@ -116,7 +116,9 @@
 
 .content--breadcrumb,
 .content--product-name,
-.content--product-price {
+.content--product-price,
+.content--product-code,
+.content--place {
 	margin-bottom: 2rem;
 }
 
@@ -126,7 +128,7 @@
 	margin-right: 0.5rem;
 }
 
-.product-price--pre {
+.product-price--prev {
 	display: inline;
 	color: var(--bw-color-4);
 }
@@ -134,3 +136,102 @@
 .product-price--discount-percent {
 	color: var(--green-color);
 }
+
+.content--amount {
+	margin-bottom: 3em;
+}
+
+.amount--quantity {
+	display: inline-block;
+	margin: 0 2rem;
+	font-weight: bold;
+}
+
+.amount--btn-minus,
+.amount--btn-plus {
+	display: inline-block;
+	font-size: larger;
+}
+
+.amount--btn-minus:hover,
+.amount--btn-plus:hover {
+	cursor: pointer;
+}
+
+.amount--btn-add {
+	display: inline-block;
+	background-color: var(--green-color);
+	color: white;
+	padding: 1rem 3rem;
+	margin-left: 2rem;
+	border-radius: 1rem;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.amount--btn-add:hover {
+	transform: scale(0.9);
+	cursor: pointer;
+}
+
+.content--product-code {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.time--label {
+	display: inline;
+	color: var(--bw-color-6);
+}
+
+.time--delivery {
+	margin-left: 15rem;
+	display: inline;
+	font-weight: bold;
+}
+
+.place--country-box,
+.place--location-box {
+	background-color: var(--bw-color-2);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	color: var(--bw-color-4);
+	font-weight: 500;
+}
+
+.place--location-box {
+	margin-left: 1.5rem;
+	width: 55%;
+}
+
+.content--others-option {
+	color: var(--primary-color-3);
+}
+
+.others-option--pd-detail,
+.others-option--delivery {
+	width: 80%;
+	border-bottom: 0.2rem solid var(--primary-color-6);
+}
+
+.content--others-option p {
+	display: inline;
+}
+
+.pd-detail--label,
+.delivery--label {
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+
+.pd-detail--sp-char {
+	margin-left: 70%;
+	font-weight: bold;
+}
+
+.delivery--sp-char {
+	margin-left: 62%;
+	font-weight: bold;
+}
+
+/* Products End */
