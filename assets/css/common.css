@@ -82,7 +82,7 @@ body {
 }
 
 .language-choice__vi::before {
-	content: "";
+	content: '';
 	display: inline-block;
 	position: absolute;
 	left: -0.6rem;
@@ -110,7 +110,7 @@ body {
 	position: absolute;
 	top: -0.8rem;
 	right: -1rem;
-	content: "4";
+	content: '4';
 	display: inline-block;
 	width: 1.5rem;
 	height: 1.5rem;
@@ -253,4 +253,27 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+
+/* DahLee coded */
+.next-img-box {
+	display: flex;
+}
+
+.next-img-box .box-item {
+	width: 2rem;
+	height: 0.8rem;
+	border-radius: 1.6rem;
+}
+
+.box1 {
+	margin-left: 43%;
+	background-color: var(--primary-color-3);
+}
+
+.box2,
+.box3 {
+	margin-left: 2rem;
+	background-color: var(--bw-color-3);
 }
