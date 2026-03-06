@@ -148,6 +148,7 @@
 	position: relative;
 	background-color: var(--bw-color-1);
 }
+
 .product__gallery--img {
 	width: 100%;
 	height: 98%;
@@ -371,4 +372,101 @@
 	flex-direction: column;
 
 	color: var(--text__color__banner);
+}
+
+/* Login */
+
+.st_login__content {
+	display: flex;
+}
+
+.main-content {
+	width: 100%;
+}
+
+.st_login__list {
+	width: 29.3125rem;
+	height: 67.435rem;
+	background-color: #f9f9fb;
+}
+
+.st_login__information {
+	width: 72.0625rem;
+	height: 41.0625rem;
+	margin: 13.37rem 9.19rem 12.5rem 9.44rem;
+	border: 2px solid green;
+}
+
+.information_view {
+	display: flex;
+}
+
+.information_shippingAdrr {
+	display: flex;
+}
+
+.information_Address01 {
+	display: flex;
+}
+
+.information_Address02 {
+	display: flex;
+}
+
+.addrEdit {
+	display: flex;
+}
+
+.list_sidebar {
+	margin: 9.62rem 8.75rem;
+}
+
+.list_sidebar__top {
+	width: 12.1875rem;
+	height: 7.5rem;
+	font-family: var(--primary-font);
+	font-size: 2.5rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 3.75rem;
+	letter-spacing: 0.05rem;
+	color: var(--primary-color-5);
+	margin-bottom: 5rem;
+}
+
+.list_sidebar__bottom {
+	display: inline-flex;
+	gap: 5.5rem;
+	align-items: center;
+	flex-direction: column;
+}
+
+.list_over {
+	color: var(--primary-color-4);
+	font-family: var(--primary-font);
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 2.625rem;
+	letter-spacing: 0.035rem;
+}
+
+.list_orders {
+	color: var(--bw-color-4);
+	font-family: var(--primary-font);
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 2.625rem;
+	letter-spacing: 0.035rem;
+}
+
+.list_wish {
+	color: var(--bw-color-4);
+	font-family: var(--primary-font);
+	font-size: 1.75rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 2.625rem;
+	letter-spacing: 0.035rem;
 }
