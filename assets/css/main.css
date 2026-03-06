@@ -1,13 +1,146 @@
-/* Products Start */
+:root {
+	--text__color__banner: #fff;
+}
+.st__lp__banner {
+	background-image: url(../img/stationery-landing-page-hero-banner.jpg);
+	max-width: 192rem;
+	width: 153.5rem;
+	height: 56.5rem;
+	/* Ép chiều rộng 100% và chiều cao 100% theo khung */
+	background-size: 100% 100%;
+	/* Ngăn hình ảnh tự động lặp lại  */
+	background-repeat: no-repeat;
+	/* Canh giữa hình ảnh để khung nhìn đẹp mắt hơn */
+	background-position: center;
 
-.main--product .main-content {
-	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	color: var(--text__color__banner);
+}
+.st__lp__banner__content h1 {
+	text-align: center;
+	font-size: 5rem;
+	font-style: normal;
+	/* Đưa nét chữ về mức bình thường (không in đậm) */
+	font-weight: normal;
+	letter-spacing: 0.12rem;
+	font-weight: 300;
+}
+.main--empty-cart {
+	min-height: calc(100vh - 200px);
+	display: flex;
+	justify-content: center;
 }
 
-.product__detail {
-	width: 100%;
+.main--empty-cart {
+	flex: 1;
 	display: flex;
-	height: 60rem;
+	justify-content: center;
+}
+
+.empty-cart {
+	margin: 80px 16px 120px;
+	text-align: center;
+}
+
+.empty-cart__icon-wrap {
+	margin-bottom: 24px;
+}
+
+.empty-cart__icon {
+	max-width: 220px;
+	width: 100%;
+	height: auto;
+}
+
+.empty-cart__title {
+	font-weight: 600;
+	font-size: 2.4rem;
+	margin-bottom: 8px;
+}
+
+.empty-cart__desc {
+	font-size: 1.6rem;
+	color: #6b7280;
+	margin-bottom: 24px;
+}
+
+.empty-cart__btn {
+	display: inline-block;
+	padding: 10px 32px;
+	border-radius: 999px;
+}
+
+.header--cart {
+	height: auto;
+	background: #fff;
+	border-bottom: 1px solid #e5e7eb;
+}
+
+.header-nav--cart {
+	padding: 2rem 8rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 6rem;
+}
+
+.cart-steps {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	max-width: 52rem;
+	margin: 0 auto;
+	gap: 1.8rem;
+}
+
+.cart-step {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 7rem;
+	height: 3.2rem;
+	padding: 0 1.6rem;
+	border-radius: 999px;
+	background: #f3f4f6;
+	color: #6b7280;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+.cart-step--active {
+	background: #29367c;
+	color: #fff;
+}
+
+.cart-step__divider {
+	flex: 2;
+	border: 0.18rem dashed #aaa9a5fe;
+}
+
+.cart-back-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.6rem;
+	font-size: 1.4rem;
+	color: #4b5563;
+}
+
+.cart-back-link__icon {
+	width: 1.2rem;
+	height: 1.2rem;
+}
+
+.cart-back-link__text {
+	white-space: nowrap;
+}
+
+.main--cart {
+	background: #fff;
+	min-height: calc(100vh - 200px);
 }
 
 .product__gallery {
@@ -232,6 +365,10 @@
 .delivery--sp-char {
 	margin-left: 62%;
 	font-weight: bold;
-}
 
-/* Products End */
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	color: var(--text__color__banner);
+}
