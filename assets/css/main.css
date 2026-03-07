@@ -3,26 +3,27 @@
 :root {
 	--text__color__banner: #fff;
 	--text__color__button__banner: #29367c;
+	--text__color__price: #2e2e2e;
+	--background__color__Xpress: #64a759;
+	--icon__color__shadow__love__icon: #f3f3f3;
 }
-
-main .main--stationery-landing-page {
+main .main--stationery {
 	max-width: 153.5rem;
 }
 
-.st__landing-page-inner {
+.stationery__inner {
 	margin: auto 8.94rem auto 8.94rem;
 	max-width: 153.5rem;
+	height: 90rem;
 }
 
-.st__lp__banner {
-	background-image: url(../img/stationery-landing-page-hero-banner.jpg);
+.stationery__banner {
+	background-image: url(../img/stationery-hero-banner.jpg);
+
 	width: 100%;
-	height: 56.5rem;
-	/* Ép chiều rộng 100% và chiều cao 100% theo khung */
+	height: 100%;
 	background-size: 100% 100%;
-	/* Ngăn hình ảnh tự động lặp lại  */
 	background-repeat: no-repeat;
-	/* Canh giữa hình ảnh để khung nhìn đẹp mắt hơn */
 	background-position: center;
 	display: flex;
 	justify-content: center;
@@ -30,20 +31,17 @@ main .main--stationery-landing-page {
 	color: var(--text__color__banner);
 	font-style: normal;
 }
-
-.st__lp__banner__content {
+.stationery__banner__content {
 	text-align: center;
 	flex-direction: column;
 }
-
-.st__lp__banner__tittle {
+.stationery__banner__title {
 	font-size: 5rem;
 	font-weight: normal;
 	letter-spacing: 0.12rem;
 	font-weight: 400;
 }
-
-.st__lp__banner__button {
+.stationery__banner__button {
 	padding: 1.8rem 4.8rem;
 	font-size: 2.4rem;
 	font-weight: 500;
@@ -54,20 +52,16 @@ main .main--stationery-landing-page {
 	border-radius: 16px;
 	border: 2px solid var(--text__color__button__banner);
 	margin-top: 5rem;
-	/* cài đặt thời gian hoàn thành một hiệu ứng chuyển đổi. */
 	transition-duration: 0.4s;
-	/* biến con trỏ chuột thành con trỏ ngón tay chỉ ra */
 	cursor: pointer;
 }
-
-.st__lp__banner__button:hover {
+.stationery__banner__button:hover {
 	background-color: var(--text__color__button__banner);
 	color: var(--text__color__banner);
-	/* phóng to phần tử lên 1.1 lần */
 	transform: scale(1.1);
 }
 
-.st__lp__heading {
+.stationery__heading {
 	text-align: center;
 	font-family: Quicksand;
 	font-size: 2.5rem;
@@ -77,57 +71,88 @@ main .main--stationery-landing-page {
 	letter-spacing: 0.05rem;
 }
 
-.st__lp__heading {
-	margin-top: 7.5rem;
-	margin-bottom: 6.63rem;
+.stationery__best-selling__tittle {
+	margin-bottom: 6.4rem;
 }
-
-.st__lp__best-selling__tittle {
-	margin-bottom: 0.4rem;
+.stationery__best-selling {
+	height: 72.7rem;
 }
-
-.st__lp__best-selling {
-	height: 45.4375rem;
-}
-
-.st__lp__best-selling__list {
+.stationery__best-selling__list {
 	display: flex;
 	overflow-x: auto;
 	overflow-y: hidden;
-	height: 39.9rem;
+	height: 49rem;
 	align-items: flex-start;
 	gap: 7.2rem;
+	position: relative;
 }
-
-.st__lp__best-selling__product {
-	height: 24.875rem;
+.stationery__product__link {
+	width: 24.3rem;
+	height: 39.9rem;
 }
-
-.st__lp__product__link {
-	width: 15.1875rem;
-	margin-right: 7.2rem;
+.stationery__Xpress__sticker {
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%; /* 24px */
+	letter-spacing: 0.032rem;
+	position: absolute;
+	margin-left: 2.4rem;
+	background-color: var(--background__color__Xpress);
+	color: var(--text__color__banner);
+	padding: 0.8rem;
+	border-radius: 0 0 0.8rem 0.8rem;
 }
-
-.st__lp__product__img {
+.stationery__border__love__icon {
+	width: 3.2rem;
+	height: 3.2rem;
+	position: absolute;
+	margin-left: 19.5rem;
+	margin-top: 1.6rem;
+	background-color: var(--text__color__banner);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	/* chưa làm xong */
+}
+.stationery__love__icon {
+	max-width: 1.50943rem;
+	max-height: 1.44906rem;
+	background-color: var(--text__color__banner);
+}
+.stationery__shopping__icon {
+	position: absolute;
+	margin-top: 23.8rem;
+	margin-left: 19.5rem;
+	margin-right: 1.6rem;
+}
+.stationery__product__img {
 	width: 24.3rem;
 	height: 28.5rem;
 }
 
 .product-content {
-	margin: 0.2rem auto 0.1rem;
-	text-align: justify;
-	width: 24.3rem;
-	height: 39.8rem;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 150%;
+	letter-spacing: 0.032rem;
+	margin-top: 3.2rem;
 }
 
 .product-price {
-	width: 9.6875rem;
-	font-size: 1.5rem;
+	margin-top: 1.6rem;
+	color: var(--text__color__price);
+	font-size: 2.4rem;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 150%;
-	/* 2.25rem */
-	letter-spacing: 0.03rem;
+	line-height: 150%; /* 36px */
+	letter-spacing: 0.048rem;
 }
 
 /*================= stationery landing page css place================== */
@@ -252,11 +277,6 @@ main .main--stationery-landing-page {
 	background-color: var(--bw-color-1);
 }
 
-.product__gallery--img {
-	width: 100%;
-	height: 98%;
-}
-
 .product__gallery--arrow-back-box {
 	display: flex;
 	position: absolute;
@@ -315,14 +335,13 @@ main .main--stationery-landing-page {
 .product__gallery--arrow-back-box:hover,
 .product__gallery--love-box:hover,
 .product__gallery--maximize-arrow-box:hover {
-	transform: scale(0.8);
 	cursor: pointer;
+	color: #fff;
+	background: var(--primary-color-3);
 }
 
 .product__info {
-	flex: 1;
 	display: flex;
-	height: 100%;
 	background-color: var(--bw-color-1);
 }
 
@@ -344,7 +363,6 @@ main .main--stationery-landing-page {
 
 .breadcrumb--item:hover {
 	color: var(--bw-color-6);
-	transform: scale(0.9);
 }
 
 .item--active {
@@ -407,8 +425,9 @@ main .main--stationery-landing-page {
 }
 
 .amount--btn-add:hover {
-	transform: scale(0.9);
 	cursor: pointer;
+	opacity: 0.9;
+	transition: 0.25s ease all;
 }
 
 .content--product-code {
@@ -443,46 +462,24 @@ main .main--stationery-landing-page {
 
 .content--others-option {
 	color: var(--primary-color-3);
+	font-weight: bold;
 }
 
-.others-option--pd-detail,
-.others-option--delivery {
-	width: 80%;
+.others-option--pd-detail {
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.4rem;
 	border-bottom: 0.2rem solid var(--primary-color-6);
 }
 
-.content--others-option p {
-	display: inline;
-}
-
-.pd-detail--label,
-.delivery--label {
+.pd-detail--label {
 	font-weight: 600;
-	font-size: 1.4rem;
-}
-
-.pd-detail--sp-char {
-	margin-left: 70%;
-	font-weight: bold;
-}
-
-.delivery--sp-char {
-	margin-left: 62%;
-	font-weight: bold;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	color: var(--text__color__banner);
 }
 
 /*============================ Login =================================*/
 
 .st_login__content {
 	display: flex;
-}
-
-.main-content {
-	width: 100%;
 }
 
 .st_login__list {
@@ -687,14 +684,162 @@ main .main--stationery-landing-page {
 	left: 53.5rem;
 }
 
-/*=================================== wishlist =================================*/
-
-.st__wishlist--content {
-	display: flex;
-	border: 2px solid red;
+/* danh */
+.main--product {
+	height: 2000px;
 }
 
-.st__wishlist--sidebar {
-	width: 98.625rem;
-	height: 91.63rem;
+.product__detail {
+	width: 100%;
+	display: flex;
+}
+
+.product__gallery {
+	width: 60%;
+}
+
+.header--product {
+	height: 8.74rem;
+}
+
+.product__gallery--img {
+	width: 100%;
+}
+
+/* === Stationery Product === */
+.main-content--stationery-product {
+	width: 140rem;
+	max-width: 100%;
+}
+
+/* Stationery Content */
+.stationery-product__content {
+	display: flex;
+	gap: 2rem;
+	margin-top: 6rem;
+}
+
+/* Stationery Product Aside */
+.stationery-product__category {
+	width: 22%;
+}
+
+/* Stationery Product Category */
+.stationery-product__search {
+	padding: 1rem;
+	border-radius: 0.6875rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	background: #f9f9fb;
+	width: 100%;
+}
+
+.stationery-product__input::placeholder {
+	color: #979999;
+	font-weight: 500;
+	letter-spacing: 0.02rem;
+}
+
+/* Stationery Product List */
+.stationery-product__product {
+	width: 78%;
+}
+
+.st-product__title {
+	margin: 4rem 0;
+	text-align: center;
+}
+
+.st-product__list {
+	position: relative;
+	display: flex;
+	gap: 5.3rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.st-product__item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+}
+
+/* Delivery */
+.stationery-product__nav-item {
+	padding: 1.5rem;
+	font-weight: 700;
+	background: #f9f9fb;
+	border-radius: 1rem;
+}
+
+.stationery-product-option__item {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.stationery-product__nav-item--deli {
+	margin-top: 3rem;
+}
+
+.stationery-product-item__desc--deli {
+	color: var(--primary-color-3);
+	font-weight: 700;
+}
+
+.stationery-product__nav-item--category {
+	margin-top: 2rem;
+}
+
+.stationery-product__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.stationery-product__header-title {
+	color: var(--primary-color-2);
+	font-weight: 700;
+}
+
+.stationery-product__header-tag {
+	color: var(--primary-color-4);
+}
+
+/* List Product */
+
+.stationery-product__list-item {
+}
+
+.stationery-product__img-wrap {
+	position: relative;
+}
+
+.stationery-product__overlay {
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	background: #f3f3f3;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.stationery-product__overlay-icon {
+	top: 0;
+	right: 0;
+}
+
+.stationery-product__list-product {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.stationery-product__list-item {
+	width: 22rem;
 }

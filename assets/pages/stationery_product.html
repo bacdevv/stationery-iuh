@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Stationery Product | Stationery IUH - Văn phòng phẩm chất lượng cao</title>
+		<title>Stationery Product | Stationery IUH</title>
 
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png" />
@@ -59,15 +59,242 @@
 			<!-- Main -->
 			<!-- BEM block__element--modifier -->
 			<main class="main main--stationery-product" style="min-height: 5000px">
-				<div class="main-content">
+				<div class="main-content main-content--stationery-product">
 					<!-- Code here... -->
-					<h2 class="h2l">Stationery</h2>
-					<div class="st_product__list">
-						<div class="st_product__item">
-							<img src="../img/stationery-product-01.jpg" alt="" class="st_product__thumb" />
-							<p class="st_product__desc">Books and Registers</p>
+					<h2 class="h2l st-product__title">Stationery</h2>
+
+					<!-- Stationery Product List -->
+					<div class="st-product__list">
+						<div class="st-product__item">
+							<img src="../img/stationery-product-01.jpg" alt="" class="st-product__thumb" />
+							<p class="caption st-product__desc">Books and Registers</p>
+						</div>
+
+						<div class="st-product__item">
+							<img src="../img/stationery-product-02.jpg" alt="" class="st-product__thumb" />
+							<p class="caption st-product__desc">Writing and Correction Supplies</p>
+						</div>
+
+						<div class="st-product__item">
+							<img src="../img/stationery-product-03.jpg" alt="" class="st-product__thumb" />
+							<p class="caption st-product__desc">Bags and Pouches</p>
+						</div>
+
+						<div class="st-product__item">
+							<img src="../img/stationery-product-04.jpg" alt="" class="st-product__thumb" />
+							<p class="caption st-product__desc">Mailing and Packaging</p>
+						</div>
+
+						<div class="st-product__item">
+							<img src="../img/stationery-product-05.jpg" alt="" class="st-product__thumb" />
+							<p class="caption st-product__desc">Desk Essentials</p>
+						</div>
+
+						<div class="st-product__item">
+							<img src="../img/stationery-product-06.jpg" alt="" class="st-product__thumb" />
+							<p class="caption st-product__desc">Tapes, Adhesives and Fasteners</p>
+						</div>
+
+						<div class="st-product__item">
+							<img src="../img/stationery-product-07.jpg" alt="" class="st-product__thumb" />
+							<p class="caption st-product__desc">Measurement Tools</p>
+						</div>
+
+						<div class="st-product__item">
+							<img src="../img/stationery-product-08.jpg" alt="" class="st-product__thumb" />
+							<p class="caption st-product__desc">Paper</p>
+						</div>
+
+						<div class="st-product__item">
+							<img src="../img/stationery-product-09.jpg" alt="" class="st-product__thumb" />
+							<p class="caption st-product__desc">Presentation Boards</p>
 						</div>
 					</div>
+
+					<!-- Stationery Content -->
+					<section class="stationery-product__content">
+						<!-- Stationery Product Category -->
+						<aside class="stationery-product__category">
+							<div class="stationery-product__search">
+								<!-- Stationery Search -->
+								<label for="stationery-product-input">
+									<img class="stationery-product__icon" src="../icons/header-icon-search.svg" alt="" />
+								</label>
+								<input class="stationery-product__input" id="stationery-product-input" type="text" placeholder="Category, brand, etc." />
+							</div>
+
+							<!-- Delivery -->
+							<div class="stationery-product__nav-item stationery-product__nav-item--deli">
+								<ul class="stationery-product-option__list">
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-1" type="checkbox" />
+										<label for="stationery-product-label-1" class="stationery-product-item__desc stationery-product-item__desc--deli"
+											>Xpress delivery</label
+										>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-2" type="checkbox" />
+										<label for="stationery-product-label-2" class="stationery-product-item__desc stationery-product-item__desc--deli"
+											>Regular delivery</label
+										>
+									</li>
+								</ul>
+							</div>
+
+							<!-- Category -->
+							<div class="stationery-product__nav-item stationery-product__nav-item--category">
+								<div class="stationery-product__header">
+									<p class="stationery-product__header-title">Catagory</p>
+									<a href="#!" class="stationery-product__header-tag">ALL</a>
+								</div>
+
+								<ul class="stationery-product-option__list">
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-3" type="checkbox" />
+										<label for="stationery-product-label-3" class="stationery-product-item__desc">Refill Pads</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-4" type="checkbox" />
+										<label for="stationery-product-label-4" class="stationery-product-item__desc">Exercise Book</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-5" type="checkbox" />
+										<label for="stationery-product-label-5" class="stationery-product-item__desc">Subject Notebook</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-6" type="checkbox" />
+										<label for="stationery-product-label-6" class="stationery-product-item__desc">Accounts Log and Voucher</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-7" type="checkbox" />
+										<label for="stationery-product-label-7" class="stationery-product-item__desc">Books</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-8" type="checkbox" />
+										<label for="stationery-product-label-8" class="stationery-product-item__desc">Premium Notebooks</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-9" type="checkbox" />
+										<label for="stationery-product-label-9" class="stationery-product-item__desc">Register</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-10" type="checkbox" />
+										<label for="stationery-product-label-10" class="stationery-product-item__desc">A4 Exercise Or Spiral Book</label>
+									</li>
+								</ul>
+							</div>
+
+							<!-- Brand -->
+							<div class="stationery-product__nav-item stationery-product__nav-item--category">
+								<div class="stationery-product__header">
+									<p class="stationery-product__header-title">Brand</p>
+									<a href="#!" class="stationery-product__header-tag">ALL</a>
+								</div>
+
+								<ul class="stationery-product-option__list">
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-7" type="checkbox" />
+										<label for="stationery-product-label-7" class="stationery-product-item__desc">Creative Paper Stationery</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-8" type="checkbox" />
+										<label for="stationery-product-label-8" class="stationery-product-item__desc">The Paper & Ink Company</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-9" type="checkbox" />
+										<label for="stationery-product-label-9" class="stationery-product-item__desc">The Writing Corner Store</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-10" type="checkbox" />
+										<label for="stationery-product-label-10" class="stationery-product-item__desc">Everyday Writing Essentials</label>
+									</li>
+								</ul>
+							</div>
+
+							<!-- Price -->
+							<div class="stationery-product__nav-item stationery-product__nav-item--category">
+								<div class="stationery-product__header">
+									<p class="stationery-product__header-title">Price</p>
+									<a href="#!" class="stationery-product__header-tag">AED 1.00 - 60.00</a>
+								</div>
+
+								<ul class="stationery-product-option__list">
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-7" type="checkbox" />
+										<label for="stationery-product-label-7" class="stationery-product-item__desc">1.00 – 10.00</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-8" type="checkbox" />
+										<label for="stationery-product-label-8" class="stationery-product-item__desc">10.00 – 20.00</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-9" type="checkbox" />
+										<label for="stationery-product-label-9" class="stationery-product-item__desc">20.00 – 30.00</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-10" type="checkbox" />
+										<label for="stationery-product-label-10" class="stationery-product-item__desc">30.00 – 40.00</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-10" type="checkbox" />
+										<label for="stationery-product-label-10" class="stationery-product-item__desc">40.00 – 50.00</label>
+									</li>
+
+									<li class="stationery-product-option__item">
+										<input id="stationery-product-label-10" type="checkbox" />
+										<label for="stationery-product-label-10" class="stationery-product-item__desc">50.00 – 60.00</label>
+									</li>
+								</ul>
+							</div>
+						</aside>
+
+						<!-- Stationery Product -->
+						<div class="stationery-product__product">
+							<!-- List Product -->
+							<div class="stationery-product__list-product">
+								<!-- List Item 1 -->
+								<article class="stationery-product__list-item">
+									<!-- Product Image -->
+									<section class="stationery-product__img-wrap">
+										<figure class="stationery-product__thumb"><img src="../img/book1.png" alt="" /></figure>
+
+										<figure class="stationery-product__overlay stationery-product__overlay-icon">
+											<img src="../icons/stationery-product-icon-love.svg" alt="" />
+										</figure>
+
+										<figure class="stationery-product__overlay stationery-product__overlay-cart">
+											<img src="../icons/header-icon-cart.svg" alt="" />
+										</figure>
+
+										<p class="stationery-product__label">Special</p>
+
+										<!-- Product Info -->
+										<section class="stationery-product__info">
+											<p class="line-clamp bd-3l-bold stationery-product__name">
+												Brand Name - Product name, its specifications and all other details of it
+											</p>
+											<p class="bd-3l-bold stationery-product__price">AED 7.66</p>
+										</section>
+									</section>
+								</article>
+							</div>
+						</div>
+					</section>
 				</div>
 			</main>
 

@@ -132,3 +132,10 @@ li {
 .btn-1:hover {
 	background-position: left bottom;
 }
+
+.line-clamp {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
