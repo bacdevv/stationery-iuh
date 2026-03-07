@@ -1,4 +1,5 @@
 /*================= stationery landing page css place================== */
+
 :root {
 	--text__color__banner: #fff;
 	--text__color__button__banner: #29367c;
@@ -130,6 +131,7 @@ main .main--stationery {
 	width: 24.3rem;
 	height: 28.5rem;
 }
+
 .product-content {
 	display: -webkit-box;
 	-webkit-line-clamp: 2;
@@ -142,6 +144,7 @@ main .main--stationery {
 	letter-spacing: 0.032rem;
 	margin-top: 3.2rem;
 }
+
 .product-price {
 	margin-top: 1.6rem;
 	color: var(--text__color__price);
@@ -473,7 +476,7 @@ main .main--stationery {
 	font-weight: 600;
 }
 
-/* Login */
+/*============================ Login =================================*/
 
 .st_login__content {
 	display: flex;
