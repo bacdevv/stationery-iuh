@@ -7,7 +7,9 @@
 	--background__color__Xpress: #64a759;
 	--icon__color__shadow__love__icon: #f3f3f3;
 }
-main .main--stationery {
+
+/* ========== TIEN: STATIONERY ========== */
+.main--stationery {
 	max-width: 153.5rem;
 }
 
@@ -155,7 +157,9 @@ main .main--stationery {
 	letter-spacing: 0.048rem;
 }
 
-/*================= stationery landing page css place================== */
+/* ========== END TIEN: STATIONERY ========== */
+
+/* ========== THUAN: EMPTY CART ========== */
 
 .main--empty-cart {
 	min-height: calc(100vh - 200px);
@@ -269,6 +273,31 @@ main .main--stationery {
 .main--cart {
 	background: #fff;
 	min-height: calc(100vh - 200px);
+}
+
+/* ========== END THUAN: EMPTY CART ========== */
+
+/* ========== DANH : PRODUCT ========== */
+
+.main--product {
+	height: 2000px;
+}
+
+.product__detail {
+	width: 100%;
+	display: flex;
+}
+
+.product__gallery {
+	width: 60%;
+}
+
+.header--product {
+	height: 8.74rem;
+}
+
+.product__gallery--img {
+	width: 100%;
 }
 
 .product__gallery {
@@ -476,8 +505,9 @@ main .main--stationery {
 	font-weight: 600;
 }
 
-/*============================ Login =================================*/
+/* ========== END DANH : PRODUCT ========== */
 
+/* ========== DAT : LOGIN & WISHLIST ========== */
 .st_login__content {
 	display: flex;
 }
@@ -684,29 +714,9 @@ main .main--stationery {
 	left: 53.5rem;
 }
 
-/* danh */
-.main--product {
-	height: 2000px;
-}
+/* ========== END DAT : LOGIN & WISHLIST ========== */
 
-.product__detail {
-	width: 100%;
-	display: flex;
-}
-
-.product__gallery {
-	width: 60%;
-}
-
-.header--product {
-	height: 8.74rem;
-}
-
-.product__gallery--img {
-	width: 100%;
-}
-
-/* === Stationery Product === */
+/* ========== BAC : Stationery ========== */
 .main-content--stationery-product {
 	width: 140rem;
 	max-width: 100%;
@@ -843,3 +853,5 @@ main .main--stationery {
 .stationery-product__list-item {
 	width: 22rem;
 }
+
+/* ========== END BAC : Stationery ========== */
