@@ -9,6 +9,7 @@
 }
 
 /* ========== TIEN: STATIONERY ========== */
+
 .main--stationery {
 	max-width: 153.5rem;
 }
@@ -21,7 +22,6 @@
 
 .stationery__banner {
 	background-image: url(../img/stationery-hero-banner.jpg);
-
 	width: 100%;
 	height: 100%;
 	background-size: 100% 100%;
@@ -33,16 +33,19 @@
 	color: var(--text__color__banner);
 	font-style: normal;
 }
+
 .stationery__banner__content {
 	text-align: center;
 	flex-direction: column;
 }
+
 .stationery__banner__title {
 	font-size: 5rem;
 	font-weight: normal;
 	letter-spacing: 0.12rem;
 	font-weight: 400;
 }
+
 .stationery__banner__button {
 	padding: 1.8rem 4.8rem;
 	font-size: 2.4rem;
@@ -57,6 +60,7 @@
 	transition-duration: 0.4s;
 	cursor: pointer;
 }
+
 .stationery__banner__button:hover {
 	background-color: var(--text__color__button__banner);
 	color: var(--text__color__banner);
@@ -76,9 +80,11 @@
 .stationery__best-selling__tittle {
 	margin-bottom: 6.4rem;
 }
+
 .stationery__best-selling {
 	height: 72.7rem;
 }
+
 .stationery__best-selling__list {
 	display: flex;
 	overflow-x: auto;
@@ -88,15 +94,18 @@
 	gap: 7.2rem;
 	position: relative;
 }
+
 .stationery__product__link {
 	width: 24.3rem;
 	height: 39.9rem;
 }
+
 .stationery__Xpress__sticker {
 	font-size: 1.6rem;
 	font-style: normal;
 	font-weight: 600;
-	line-height: 150%; /* 24px */
+	line-height: 150%;
+	/* 24px */
 	letter-spacing: 0.032rem;
 	position: absolute;
 	margin-left: 2.4rem;
@@ -105,6 +114,7 @@
 	padding: 0.8rem;
 	border-radius: 0 0 0.8rem 0.8rem;
 }
+
 .stationery__border__love__icon {
 	width: 3.2rem;
 	height: 3.2rem;
@@ -118,17 +128,20 @@
 	border-radius: 50%;
 	/* chưa làm xong */
 }
+
 .stationery__love__icon {
 	max-width: 1.50943rem;
 	max-height: 1.44906rem;
 	background-color: var(--text__color__banner);
 }
+
 .stationery__shopping__icon {
 	position: absolute;
 	margin-top: 23.8rem;
 	margin-left: 19.5rem;
 	margin-right: 1.6rem;
 }
+
 .stationery__product__img {
 	width: 24.3rem;
 	height: 28.5rem;
@@ -153,7 +166,8 @@
 	font-size: 2.4rem;
 	font-style: normal;
 	font-weight: 700;
-	line-height: 150%; /* 36px */
+	line-height: 150%;
+	/* 36px */
 	letter-spacing: 0.048rem;
 }
 
@@ -508,17 +522,19 @@
 /* ========== END DANH : PRODUCT ========== */
 
 /* ========== DAT : LOGIN & WISHLIST ========== */
-.st_login__content {
+
+.login__content {
 	display: flex;
+	width: 100wh;
 }
 
-.st_login__list {
+.login__list {
 	width: 29.3125rem;
-	height: 67.435rem;
+	height: 68rem;
 	background-color: #f9f9fb;
 }
 
-.st_login__information {
+.login__information {
 	width: 72.0625rem;
 	height: 41.0625rem;
 	margin: 13.37rem auto;
@@ -714,15 +730,197 @@
 	left: 53.5rem;
 }
 
+.wishlist--content {
+	display: flex;
+	border: 2px solid red;
+}
+
+:root {
+	--primary--color--sidebar: #f9f9fb;
+}
+
+.wishlist--sidebar {
+	height: 91.38rem;
+	width: 29.3125rem;
+	background-color: var(--primary--color--sidebar);
+}
+
+.list_overEdit {
+	color: var(--bw-color-4);
+}
+
+.list_wishEdit {
+	color: var(--primary-color-4);
+}
+
+.wishlist__information {
+	border: 2px solid green;
+	margin-left: 6.69rem;
+}
+
+.heading__information {
+	font-family: var(--primary-font);
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 3rem;
+	letter-spacing: 0.04rem;
+	color: var(--primary-color-3);
+	margin-top: 10.44rem;
+	margin-bottom: 4rem;
+}
+
+.content__information {
+	border: 2px solid rebeccapurple;
+	display: flex;
+	width: 71.65rem;
+	flex-wrap: wrap;
+	gap: 3.5rem;
+}
+
+.item__information {
+	width: 15.1875rem;
+	height: 24.875rem;
+}
+
+.item__information:nth-child(even) {
+	background-color: #29367c;
+}
+
+.item__information:nth-child(odd) {
+	background-color: #64a759;
+}
+
+.item-img01 {
+	width: 15.1875rem;
+	height: 17.8125rem;
+	background-image: url(../img/stationery-wishlist-item01.jpg);
+	background-size: cover;
+}
+
+.item-img02 {
+	width: 15.1875rem;
+	height: 17.8125rem;
+	background-image: url(../img/stationery-wishlist-item02.jpg);
+	background-size: cover;
+}
+
+.item-img03 {
+	width: 15.1875rem;
+	height: 17.8125rem;
+	background-image: url(../img/stationery-wishlist-item03.jpg);
+	background-size: cover;
+}
+
+.item-img04 {
+	width: 15.1875rem;
+	height: 17.8125rem;
+	background-image: url(../img/stationery-wishlist-item04.jpg);
+	background-size: cover;
+}
+
+.item-img05 {
+	width: 15.1875rem;
+	height: 17.8125rem;
+	background-image: url(../img/stationery-wishlist-item05.jpg);
+	background-size: cover;
+}
+
+.item-img06 {
+	width: 15.1875rem;
+	height: 17.8125rem;
+	background-image: url(../img/stationery-wishlist-item06.jpg);
+	background-size: cover;
+}
+
+.item-img07 {
+	width: 15.1875rem;
+	height: 17.8125rem;
+	background-image: url(../img/stationery-wishlist-item07.jpg);
+	background-size: cover;
+}
+
+.item-img08 {
+	width: 15.1875rem;
+	height: 17.8125rem;
+	background-image: url(../img/stationery-wishlist-item08.jpg);
+	background-size: cover;
+}
+
+.box__love {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 2rem;
+	background-color: var(--bw-color-2);
+	position: relative;
+	top: 1rem;
+	left: 12.19rem;
+}
+
+.img-love {
+	width: 0.94338rem;
+	height: 0.90569rem;
+}
+
+.box__shoppingcart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.01113rem;
+	height: 1.92556rem;
+	border-radius: 0.34231rem;
+	background-color: var(--primary-color-2);
+	position: relative;
+	top: 12.88rem;
+	left: 12.19rem;
+}
+
+.img-shoppingcart {
+	width: 1.04525rem;
+	height: 1.02694rem;
+}
+
+.text__information--top {
+	overflow: hidden;
+	/*ẩn nội dung bị tràn ra khỏi box*/
+	white-space: nowrap;
+	/* không cho phép chữ xuống dòng*/
+	text-overflow: ellipsis;
+	/* hiển thị các chữ bị cắt bằng dấu ... */
+	font-family: var(--primary-font);
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.5rem;
+	letter-spacing: 0.02rem;
+	margin-top: 1.5rem;
+}
+
+.text__information--bottom {
+	font-family: var(--primary-font);
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 2.25rem;
+	letter-spacing: 0.03rem;
+	color: var(--bw-color-6);
+	margin-top: 0.5rem;
+}
+
 /* ========== END DAT : LOGIN & WISHLIST ========== */
 
 /* ========== BAC : Stationery ========== */
+
 .main-content--stationery-product {
 	width: 140rem;
 	max-width: 100%;
 }
 
 /* Stationery Content */
+
 .stationery-product__content {
 	display: flex;
 	gap: 2rem;
@@ -730,11 +928,13 @@
 }
 
 /* Stationery Product Aside */
+
 .stationery-product__category {
 	width: 22%;
 }
 
 /* Stationery Product Category */
+
 .stationery-product__search {
 	padding: 1rem;
 	border-radius: 0.6875rem;
@@ -752,6 +952,7 @@
 }
 
 /* Stationery Product List */
+
 .stationery-product__product {
 	width: 78%;
 }
@@ -779,6 +980,7 @@
 }
 
 /* Delivery */
+
 .stationery-product__nav-item {
 	padding: 1.5rem;
 	font-weight: 700;
@@ -850,6 +1052,7 @@
 	align-items: center;
 	justify-content: space-between;
 }
+
 .stationery-product__list-item {
 	width: 22rem;
 }
