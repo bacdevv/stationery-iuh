@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="../css/main.css" />
 	</head>
 	<body>
+		<!-- header -->
 		<div class="wrapper">
 			<header class="header header--cart">
 				<div class="header-nav header-nav--cart">
@@ -43,16 +44,211 @@
 					</nav>
 
 					<a href="#" class="cart-back-link">
-						<img src="../img/product--back-arrow.svg" alt="" class="cart-back-link__icon" />
+						<img src="../icons/product-back-arrow.svg" alt="" class="cart-back-link__icon" />
 						<span class="cart-back-link__text">Back to shopping</span>
 					</a>
 				</div>
 			</header>
 
+			<!-- main -->
 			<main class="main main--cart">
-				<div class="main-content"></div>
+				<div class="main-content">
+					<section class="cart">
+						<div class="cart__layout">
+							<section class="cart__list" aria-label="Cart items">
+								<header class="cart__head" aria-hidden="true">
+									<div class="cart__head-col cart__head-col--product">Product</div>
+									<div class="cart__head-col cart__head-col--qty">Quantity</div>
+									<div class="cart__head-col cart__head-col--total">Total</div>
+								</header>
+
+								<div class="cart__items">
+									<article class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__img cart-item__img--xpress">
+												<img src="../img/filled_cart_book1.jpg" alt="Product image" class="cart-item__image" />
+											</div>
+											<div class="cart-item__info">
+												<p class="cart-item__name">Brand Name - Product name, its specifications and all other...</p>
+												<div class="cart-item__prices">
+													<span class="cart-item__price">AED 3.80</span>
+													<span class="cart-item__price-old">0.00</span>
+												</div>
+												<p class="cart-item__meta">SKU: 8901425031926</p>
+												<p class="cart-item__meta">Delivery by 4 Jun 2022</p>
+											</div>
+										</div>
+
+										<div class="cart-item__qty" aria-label="Quantity">
+											<button class="cart-item__qty-btn" type="button" aria-label="Decrease quantity">−</button>
+											<span class="cart-item__qty-value">1</span>
+											<button class="cart-item__qty-btn" type="button" aria-label="Increase quantity">+</button>
+										</div>
+
+										<div class="cart-item__total">
+											<span class="cart-item__total-price">AED 3.80</span>
+											<button class="cart-item__remove" type="button" aria-label="Remove item">×</button>
+										</div>
+									</article>
+
+									<article class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__img cart-item__img--pen">
+												<img src="../img/filled_cart_book2.jpg" alt="Product image" class="cart-item__image" />
+											</div>
+											<div class="cart-item__info">
+												<p class="cart-item__name">Brand Name - Product name, its specifications and all other...</p>
+												<div class="cart-item__prices">
+													<span class="cart-item__price">AED 3.80</span>
+													<span class="cart-item__price-old">0.00</span>
+												</div>
+												<p class="cart-item__meta">SKU: 8901425031926</p>
+												<p class="cart-item__meta">Delivery by 7 Jun 2022</p>
+											</div>
+										</div>
+
+										<div class="cart-item__qty" aria-label="Quantity">
+											<button class="cart-item__qty-btn" type="button" aria-label="Decrease quantity">−</button>
+											<span class="cart-item__qty-value">1</span>
+											<button class="cart-item__qty-btn" type="button" aria-label="Increase quantity">+</button>
+										</div>
+
+										<div class="cart-item__total">
+											<span class="cart-item__total-price">AED 3.80</span>
+											<button class="cart-item__remove" type="button" aria-label="Remove item">×</button>
+										</div>
+									</article>
+
+									<article class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__img cart-item__img--pencil">
+												<img src="../img/filled_cart_book3.jpg" alt="Product image" class="cart-item__image" />
+											</div>
+											<div class="cart-item__info">
+												<p class="cart-item__name">Brand Name - Product name, its specifications and all other...</p>
+												<div class="cart-item__prices">
+													<span class="cart-item__price">AED 3.80</span>
+													<span class="cart-item__price-old">0.00</span>
+												</div>
+												<p class="cart-item__meta">SKU: 8901425031926</p>
+												<p class="cart-item__meta">Delivery by 7 Jun 2022</p>
+											</div>
+										</div>
+
+										<div class="cart-item__qty" aria-label="Quantity">
+											<button class="cart-item__qty-btn" type="button" aria-label="Decrease quantity">−</button>
+											<span class="cart-item__qty-value">1</span>
+											<button class="cart-item__qty-btn" type="button" aria-label="Increase quantity">+</button>
+										</div>
+
+										<div class="cart-item__total">
+											<span class="cart-item__total-price">AED 3.80</span>
+											<button class="cart-item__remove" type="button" aria-label="Remove item">×</button>
+										</div>
+									</article>
+
+									<article class="cart-item">
+										<div class="cart-item__product">
+											<div class="cart-item__img cart-item__img--special">
+												<img src="../img/filled_cart_book4.jpg" alt="Product image" class="cart-item__image" />
+											</div>
+											<div class="cart-item__info">
+												<p class="cart-item__name">Brand Name - Product name, its specifications and all other...</p>
+												<div class="cart-item__prices">
+													<span class="cart-item__price">AED 3.80</span>
+													<span class="cart-item__price-old">0.00</span>
+												</div>
+												<p class="cart-item__meta">SKU: 8901425031926</p>
+												<p class="cart-item__meta">Delivery by 10 Jun 2022</p>
+											</div>
+										</div>
+
+										<div class="cart-item__qty" aria-label="Quantity">
+											<button class="cart-item__qty-btn" type="button" aria-label="Decrease quantity">−</button>
+											<span class="cart-item__qty-value">1</span>
+											<button class="cart-item__qty-btn" type="button" aria-label="Increase quantity">+</button>
+										</div>
+
+										<div class="cart-item__total">
+											<span class="cart-item__total-price">AED 3.80</span>
+											<button class="cart-item__remove" type="button" aria-label="Remove item">×</button>
+										</div>
+									</article>
+								</div>
+
+								<a class="cart__wishlist" href="#!">
+									<img src="../icons/stationery-landing-page-love-icon.svg" alt="Wishlist icon" />
+									<span class="cart__wishlist-text">Add from wishlist</span>
+									<span class="cart__wishlist-arrow">›</span>
+								</a>
+							</section>
+
+							<aside class="cart__summary" aria-label="Order summary">
+								<section class="order-summary">
+									<h2 class="order-summary__title">Order Summary</h2>
+
+									<div class="order-summary__shipping">
+										<img src="../img/filled_cart_car.jpg" alt="Shipping icon" class="order-summary__shipping-icon" />
+										<p class="order-summary__shipping-text">Yay! Free shipping available on this order.</p>
+									</div>
+
+									<div class="order-summary__list">
+										<div class="order-summary__row">
+											<span class="order-summary__label">Item Total (4 items)</span>
+											<span class="order-summary__value">24.98</span>
+										</div>
+										<div class="order-summary__row">
+											<span class="order-summary__label">Discount</span>
+											<span class="order-summary__value order-summary__value--muted">2.50</span>
+										</div>
+									</div>
+
+									<div class="order-summary__shipping-group">
+										<label class="order-summary__option">
+											<input class="order-summary__option-input" type="radio" name="shipping" checked />
+											<span class="order-summary__option-dot" aria-hidden="true"></span>
+											<span class="order-summary__option-label">Shipping</span>
+											<span class="order-summary__option-right">Free</span>
+										</label>
+										<label class="order-summary__option">
+											<input class="order-summary__option-input" type="radio" name="shipping" />
+											<span class="order-summary__option-dot" aria-hidden="true"></span>
+											<span class="order-summary__option-label">Local Pickup</span>
+											<span class="order-summary__option-right"></span>
+										</label>
+									</div>
+
+									<form class="order-summary__coupon" action="#!">
+										<input class="order-summary__coupon-input" type="text" placeholder="Coupon code" />
+										<button class="order-summary__coupon-btn" type="button">Apply</button>
+									</form>
+
+									<div class="order-summary__grand">
+										<div class="order-summary__grand-row">
+											<p class="order-summary__grand-title">Grand Total</p>
+											<p class="order-summary__grand-value">24.98</p>
+										</div>
+										<p class="order-summary__grand-sub">(Inclusive of Taxes)</p>
+										<p class="order-summary__grand-save">You Saved AED 2.50</p>
+									</div>
+
+									<label class="order-summary__together">
+										<input class="order-summary__together-input" type="checkbox" />
+										<span class="order-summary__together-box" aria-hidden="true"></span>
+										<span class="order-summary__together-text"
+											>Deliver all together <span class="order-summary__together-hint">(Estimated delivery by 10 Jun 2022)</span></span
+										>
+									</label>
+
+									<a class="order-summary__checkout btn-1" href="#!">Checkout</a>
+								</section>
+							</aside>
+						</div>
+					</section>
+				</div>
 			</main>
 
+			<!-- footer -->
 			<footer class="footer">
 				<div class="footer__general">
 					<div class="footer__subscribe">
