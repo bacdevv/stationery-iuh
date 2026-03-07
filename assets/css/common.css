@@ -12,6 +12,10 @@ button {
 	background: inherit;
 }
 
+img {
+	object-fit: cover;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
@@ -82,7 +86,7 @@ body {
 }
 
 .language-choice__vi::before {
-	content: '';
+	content: "";
 	display: inline-block;
 	position: absolute;
 	left: -0.6rem;
@@ -110,7 +114,7 @@ body {
 	position: absolute;
 	top: -0.8rem;
 	right: -1rem;
-	content: '4';
+	content: "4";
 	display: inline-block;
 	width: 1.5rem;
 	height: 1.5rem;
@@ -254,7 +258,6 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
-
 
 /* DahLee coded */
 .next-img-box {
