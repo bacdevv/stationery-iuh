@@ -1,20 +1,13 @@
-/*================= stationery landing page css place================== */
-
-:root {
-	--text__color__banner: #fff;
-	--text__color__button__banner: #29367c;
-	--text__color__price: #2e2e2e;
-	--background__color__Xpress: #64a759;
-	--icon__color__shadow__love__icon: #f3f3f3;
-}
-
 /* ========== TIEN: STATIONERY ========== */
 
 .stationery__inner {
-	margin: auto 8.94rem auto 8.94rem;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	height: 328.875rem;
+	height: 280rem;
+	max-width: 120rem;
+	width: 100%;
+	
 }
 
 .stationery__banner {
@@ -27,40 +20,43 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: var(--text__color__banner);
+	color: var(bw-color-1);
 	font-style: normal;
 }
 
-.stationery__banner__content {
+.stationery__banner-content {
 	text-align: center;
 	flex-direction: column;
 }
 
-.stationery__banner__title {
-	font-size: 5rem;
-	font-weight: normal;
-	letter-spacing: 0.12rem;
+.stationery__banner-title {
+	font-size: 3.75rem;
+	font-style: normal;
 	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 0.075rem;
+	color: var(--bw-color-1);
 }
 
 .stationery__banner__button {
-	padding: 1.8rem 4.8rem;
-	font-size: 2.4rem;
+	padding: 1.125rem 3rem;
+	font-size: 1.5rem;
+	font-style: normal;
 	font-weight: 500;
-	line-height: 150%;
-	letter-spacing: 0.048rem;
-	background-color: var(--text__color__banner);
-	color: var(--text__color__button__banner);
+	line-height: 150%; 
+	letter-spacing: 0.03rem;
+	background-color: var(--bw-color-1);
+	color: var(--primary-color-3);
 	border-radius: 16px;
-	border: 2px solid var(--text__color__button__banner);
+	border: 2px solid var(--primary-color-3);
 	margin-top: 5rem;
 	transition-duration: 0.4s;
 	cursor: pointer;
 }
 
 .stationery__banner__button:hover {
-	background-color: var(--text__color__button__banner);
-	color: var(--text__color__banner);
+	background-color: var(--primary-color-3);
+	color: var(--bw-color-1);
 	transform: scale(1.1);
 }
 
@@ -68,12 +64,11 @@
 	text-align: center;
 	margin-top: 15rem;
 	margin-bottom: 4.6rem;
-	font-size: 4rem;
+	font-size: 2.5rem;
 	font-style: normal;
 	font-weight: 500;
 	line-height: 150%;
-	/* 60px */
-	letter-spacing: 0.08rem;
+	letter-spacing: 0.05rem;
 }
 
 .stationery__title {
@@ -82,27 +77,27 @@
 	font-style: normal;
 	font-weight: 700;
 	line-height: 150%;
-	/* 3rem */
 	letter-spacing: 0.04rem;
 }
 
 .stationery__best-selling {
-	height: 328.875rem;
+	width: 100%;
+	height: 50rem;
 }
 
 .stationery__best-selling__list {
 	display: flex;
 	overflow-x: auto;
 	overflow-y: hidden;
-	height: 49rem;
+	height: 30rem;
 	align-items: flex-start;
-	gap: 7.2rem;
+	gap: 4.5rem;
 	position: relative;
 }
 
 .stationery__product__link {
-	width: 101.875rem;
-	height: 24.875rem;
+	width: 15.1875rem;
+	height: 17.8125rem;
 	transition-duration: 0.4s;
 	position: relative;
 	transform-origin: top center;
@@ -113,36 +108,41 @@
 }
 
 .stationery__Xpress__sticker {
-	font-size: 1.6rem;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 150%;
-	/* 24px */
-	letter-spacing: 0.032rem;
+	letter-spacing: 0.02rem;
 	position: absolute;
-	margin-left: 2.4rem;
-	background-color: var(--background__color__Xpress);
-	color: var(--text__color__banner);
+	margin-left: 1.5rem;
+	background-color: var(--green-color);
+	color: var(--bw-color-1);
 	padding: 0.8rem;
 	border-radius: 0 0 0.8rem 0.8rem;
 }
 
 .stationery__love__icon {
-	margin-left: 18.5rem;
+	margin-left: 11.4rem;
 	position: absolute;
 	margin-top: 1rem;
+	margin-right: 1rem;
+	width: 4rem;
+	height: 4rem;
 }
 
 .stationery__shopping__icon {
 	position: absolute;
-	margin-top: 23.8rem;
-	margin-left: 19.5rem;
-	margin-right: 1.6rem;
+	margin-top: 15rem;
+	margin-left: 12rem;
+	margin-right: 1rem;
+	margin-bottom: 8.5rem;
+	width: 2.3rem;
+	height: 2.2rem;
 }
 
 .stationery__product__img {
-	width: 24.3rem;
-	height: 28.5rem;
+	width: 15.1875rem;
+	height: 17.8125rem;
 }
 
 .product-content {
@@ -150,27 +150,26 @@
 	-webkit-line-clamp: 2;
 	-webkit-box-orient: vertical;
 	overflow: hidden;
-	font-size: 1.6rem;
+	font-family: Quicksand;
+	font-size: 1rem;
 	font-style: normal;
 	font-weight: 600;
-	line-height: 150%;
-	letter-spacing: 0.032rem;
-	margin-top: 3.2rem;
+	line-height: 150%; 
+	letter-spacing: 0.02rem;
 }
 
 .product-price {
 	margin-top: 1.6rem;
 	color: var(--text__color__price);
-	font-size: 2.4rem;
+	font-size: 1.5rem;
 	font-style: normal;
 	font-weight: 700;
 	line-height: 150%;
-	/* 36px */
-	letter-spacing: 0.048rem;
+	letter-spacing: 0.03rem;
 }
 
 .stationery__Explore-popular-categories {
-	height: 90rem;
+	height: 75rem;
 }
 
 .stationery__Explore-popular-categories__tittle-group {
@@ -223,7 +222,6 @@
 	font-style: normal;
 	font-weight: 600;
 	line-height: 150%;
-	/* 1.875rem */
 	letter-spacing: 0.025rem;
 }
 
@@ -231,7 +229,8 @@
 	display: flex;
 	align-items: flex-start;
 	gap: 4rem;
-	width: 100%;
+	justify-content: space-between;
+	
 }
 
 .Catalog__content-title {
@@ -241,6 +240,8 @@
 	line-height: 150%;
 	letter-spacing: 0.03rem;
 	margin-bottom: 1.5rem;
+	color: var(--primary-color-3);
+	width: 16.6875rem;
 }
 
 .Catalog__content-list {
@@ -248,12 +249,11 @@
 }
 
 .catalog__item {
-	flex: 1;
-	min-width: 20rem;
+	width: 16.6875rem;
 }
 
-.catalog__link a {
-	color: #2e2e2e;
+.catalog__link {
+	
 	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 500;
