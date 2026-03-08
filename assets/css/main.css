@@ -7,7 +7,6 @@
 	height: 280rem;
 	max-width: 120rem;
 	width: 100%;
-	
 }
 
 .stationery__banner {
@@ -43,7 +42,7 @@
 	font-size: 1.5rem;
 	font-style: normal;
 	font-weight: 500;
-	line-height: 150%; 
+	line-height: 150%;
 	letter-spacing: 0.03rem;
 	background-color: var(--bw-color-1);
 	color: var(--primary-color-3);
@@ -154,7 +153,7 @@
 	font-size: 1rem;
 	font-style: normal;
 	font-weight: 600;
-	line-height: 150%; 
+	line-height: 150%;
 	letter-spacing: 0.02rem;
 }
 
@@ -230,7 +229,6 @@
 	align-items: flex-start;
 	gap: 4rem;
 	justify-content: space-between;
-	
 }
 
 .Catalog__content-title {
@@ -253,7 +251,6 @@
 }
 
 .catalog__link {
-	
 	font-size: 1.25rem;
 	font-style: normal;
 	font-weight: 500;
@@ -601,7 +598,7 @@
 }
 
 .order-summary__title::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -627,7 +624,7 @@
 }
 
 .order-summary__shipping-icon::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0.55rem;
 	top: 0.55rem;
@@ -707,7 +704,7 @@
 }
 
 .order-summary__option-input:checked + .order-summary__option-dot::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -819,7 +816,7 @@
 }
 
 .order-summary__together-input:checked + .order-summary__together-box::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0.4rem;
 	top: 0.45rem;
@@ -1581,13 +1578,14 @@
 .main-content--stationery-product {
 	width: 140rem;
 	max-width: 100%;
+	padding: 20rem 0;
 }
 
 /* Stationery Content */
 
 .stationery-product__content {
 	display: flex;
-	gap: 2rem;
+	gap: 3rem;
 	margin-top: 6rem;
 }
 
@@ -1689,16 +1687,24 @@
 /* List Product */
 
 .stationery-product__list-item {
+	width: 24.5rem;
 }
 
 .stationery-product__img-wrap {
 	position: relative;
+	overflow: hidden;
+}
+
+.stationery-product__thumb:hover > img {
+	transform: scale(1.5);
+	transition: all 0.5s ease;
+	cursor: pointer;
 }
 
 .stationery-product__overlay {
 	position: absolute;
-	width: 2rem;
-	height: 2rem;
+	width: 3.2rem;
+	height: 3.2rem;
 	border-radius: 50%;
 	background: #f3f3f3;
 	display: flex;
@@ -1706,19 +1712,106 @@
 	justify-content: center;
 }
 
-.stationery-product__overlay-icon {
-	top: 0;
-	right: 0;
+.stationery-product__overlay-love {
+	top: 1.6rem;
+	right: 1.6rem;
+	background: #fff;
+	filter: drop-shadow(0 2.415px 12.679px rgba(0, 0, 0, 0.1));
 }
 
 .stationery-product__list-product {
 	display: flex;
+	flex-wrap: wrap;
+	gap: 2.5rem;
 	align-items: center;
 	justify-content: space-between;
 }
 
 .stationery-product__list-item {
-	width: 22rem;
+	flex: 1;
+	width: 25%;
+}
+
+.stationery-product__overlay-cart {
+	bottom: 1.6rem;
+	right: 1.6rem;
+	border-radius: 0.5rem;
+	background: var(--primary-color-2);
+}
+
+.stationery-product__overlay {
+	transition: 0.25s ease all;
+	cursor: pointer;
+}
+
+.stationery-product__overlay-cart:hover {
+	background: var(--primary-color-3);
+}
+
+.stationery-product__overlay-love:hover {
+	background: #f3f3f3;
+}
+
+.stationery-product__label {
+	position: absolute;
+	top: 0;
+	left: 1.6rem;
+	color: #fff;
+	width: 5.7rem;
+	padding: 6px 8px 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--orange-color);
+	border-radius: 0 0 0.8rem 0.8rem;
+}
+
+.stationery-product__label--green {
+	background: var(--green-color);
+}
+
+.stationery-product__name {
+	padding: 2rem 0 1rem;
+	font-size: 1.6rem;
+	line-height: 1.4;
+}
+
+.stationery-product__pagination-wrap,
+.stationery-product__pagination {
+	margin-top: 7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 0 6rem;
+	color: #fff;
+}
+
+.stationery-product__svg:hover {
+	color: #fff;
+	background: #fff;
+	cursor: pointer;
+}
+
+.stationery-product__pagination-wrap {
+	margin-top: 0;
+}
+
+.stationery-product__pagination-page:hover {
+	background: var(--primary-color-3);
+	cursor: pointer;
+	transition: all ease 0.25s;
+}
+
+.stationery-product__pagination-page {
+	width: 5.1rem;
+	height: 4.6rem;
+	border-radius: 0.8rem;
+	background: var(--primary-color-2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
 }
 
 /* ========== END BAC : Stationery ========== */
