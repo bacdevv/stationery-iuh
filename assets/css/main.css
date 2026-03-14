@@ -1693,6 +1693,7 @@
 .stationery-product__img-wrap {
 	position: relative;
 	overflow: hidden;
+	border-radius: 2rem;
 }
 
 .stationery-product__thumb:hover > img {
