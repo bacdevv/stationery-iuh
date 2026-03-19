@@ -892,8 +892,11 @@
 
 /* ========== DANH : PRODUCT ========== */
 
-.main--product {
-	height: 2000px;
+.main-content--product {
+	width: 120rem;
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 2rem 0;
 }
 
 .product__detail {
@@ -984,13 +987,13 @@
 
 .product__info {
 	display: flex;
+	flex: 1;
 	background-color: var(--bw-color-1);
 }
 
 .product__info--content {
 	width: 80%;
-	height: 80%;
-	margin: auto;
+	margin: 0 auto;
 }
 
 .content--breadcrumb .breadcrumb--list {
@@ -1104,7 +1107,7 @@
 
 .place--location-box {
 	margin-left: 1.5rem;
-	width: 82%;
+	width: 74%;
 }
 
 .content--others-option {
@@ -1167,18 +1170,13 @@
 	margin-bottom: 7.1rem;
 }
 
-/* .related-items-container--slider {
-	height: 1.6rem;
-	background-color: var(--bw-color-2);
-	border-radius: 1rem;
+.stationery__related-product__list {
+	display: flex;
+	overflow-x: auto;
+	overflow-y: hidden;
+	align-items: flex-start;
+	gap: 4.5rem;
 }
-
-.related-items-container__slider--bar {
-	height: 1.6rem;
-	border-radius: 1rem;
-	width: 50%;
-	background-color: var(--bw-color-3);
-} */
 
 /* ========== END DANH : PRODUCT ========== */
 
