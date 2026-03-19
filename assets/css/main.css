@@ -1399,7 +1399,7 @@
 }
 
 .wishlist--sidebar {
-	height: 91.38rem;
+	height: 120rem;
 	width: 29.3125rem;
 	background-color: var(--primary--color--sidebar);
 }
@@ -1413,7 +1413,7 @@
 }
 
 .wishlist__information {
-	margin-left: 6.69rem;
+	margin-left: 2rem;
 }
 
 .heading__information {
@@ -1430,70 +1430,9 @@
 
 .content__information {
 	display: flex;
-	width: 71.65rem;
+	width: 120rem;
 	flex-wrap: wrap;
 	gap: 3.5rem;
-}
-
-.item__information {
-	width: 15.1875rem;
-	height: 24.875rem;
-}
-
-.item-img01 {
-	width: 15.1875rem;
-	height: 17.8125rem;
-	background-image: url(../img/stationery-wishlist-item01.jpg);
-	background-size: cover;
-}
-
-.item-img02 {
-	width: 15.1875rem;
-	height: 17.8125rem;
-	background-image: url(../img/stationery-wishlist-item02.jpg);
-	background-size: cover;
-}
-
-.item-img03 {
-	width: 15.1875rem;
-	height: 17.8125rem;
-	background-image: url(../img/stationery-wishlist-item03.jpg);
-	background-size: cover;
-}
-
-.item-img04 {
-	width: 15.1875rem;
-	height: 17.8125rem;
-	background-image: url(../img/stationery-wishlist-item04.jpg);
-	background-size: cover;
-}
-
-.item-img05 {
-	width: 15.1875rem;
-	height: 17.8125rem;
-	background-image: url(../img/stationery-wishlist-item05.jpg);
-	background-size: cover;
-}
-
-.item-img06 {
-	width: 15.1875rem;
-	height: 17.8125rem;
-	background-image: url(../img/stationery-wishlist-item06.jpg);
-	background-size: cover;
-}
-
-.item-img07 {
-	width: 15.1875rem;
-	height: 17.8125rem;
-	background-image: url(../img/stationery-wishlist-item07.jpg);
-	background-size: cover;
-}
-
-.item-img08 {
-	width: 15.1875rem;
-	height: 17.8125rem;
-	background-image: url(../img/stationery-wishlist-item08.jpg);
-	background-size: cover;
 }
 
 .box__love {
@@ -1540,7 +1479,7 @@
 	text-overflow: ellipsis;
 	/* hiển thị các chữ bị cắt bằng dấu ... */
 	font-family: var(--primary-font);
-	font-size: 1rem;
+	font-size: 1.6rem;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 1.5rem;
@@ -1556,7 +1495,7 @@
 	line-height: 2.25rem;
 	letter-spacing: 0.03rem;
 	color: var(--bw-color-6);
-	margin-top: 0.5rem;
+	margin-top: 2rem;
 }
 
 .box_label {
@@ -1596,7 +1535,7 @@
 
 .price__information {
 	font-family: var(--primary-font);
-	font-size: 1.25rem;
+	font-size: 1.6rem;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 1.875rem;
@@ -1608,7 +1547,7 @@
 
 .discount__information {
 	font-family: var(--primary-font);
-	font-size: 1rem;
+	font-size: 1.6rem;
 	font-style: normal;
 	font-weight: 600;
 	line-height: 1.5rem;
