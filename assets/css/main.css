@@ -1249,6 +1249,11 @@
 	font-weight: bold;
 }
 
+.content--place {
+	display: flex;
+	justify-content: space-between;
+}
+
 .place--country-box,
 .place--location-box {
 	background-color: var(--bw-color-2);
@@ -1259,7 +1264,6 @@
 }
 
 .place--location-box {
-	margin-left: 1.5rem;
 	width: 74%;
 }
 
@@ -1329,6 +1333,25 @@
 	overflow-y: hidden;
 	align-items: flex-start;
 	gap: 4.5rem;
+}
+
+@media (max-width: 76.8rem) {
+	.product__detail {
+		flex-direction: column;
+	}
+	.product__info,
+	.product__gallery {
+		width: 100%;
+	}
+
+	.time--delivery {
+		margin-left: 0;
+	}
+
+	.place--location-box {
+		width: 100%;
+		margin-left: 0;
+	}
 }
 
 /* ========== END DANH : PRODUCT ========== */
