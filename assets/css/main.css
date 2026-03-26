@@ -1336,6 +1336,13 @@
 }
 
 @media (max-width: 76.8rem) {
+	.header--product {
+		width: 100%;
+	}
+	/* .main-content--product {
+		max-width: 100%;
+	} */
+
 	.product__detail {
 		flex-direction: column;
 	}
@@ -1351,6 +1358,13 @@
 	.place--location-box {
 		width: 100%;
 		margin-left: 0;
+	}
+	.footer--product {
+		padding: 0;
+	}
+	.footer__general--product	{
+		display: flex;
+		flex-direction: column;
 	}
 }
 
@@ -1790,6 +1804,7 @@
 		width: 80.5rem;
 	}
 }
+
 /* ========== END DAT : LOGIN & WISHLIST ========== */
 
 /* ========== BAC : Stationery ========== */
