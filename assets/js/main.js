@@ -55,6 +55,8 @@
 		},
 	];
 
+	const stationeryBannerImages = [`${imgBase}slider1.jpg`, `${imgBase}slider2.jpg`, `${imgBase}slider3.jpg`];
+
 	const pickVariant = (id) => {
 		const found = productVariants.find((item) => item.id === id);
 		return found || productVariants[Math.floor(Math.random() * productVariants.length)];
@@ -98,12 +100,22 @@
 		}
 	};
 
+	const redirectToStationery = () => {
+		const isRoot = path === "/" || path === "";
+		if (!isInPages && (isRoot || path.endsWith("index.html"))) {
+			window.location.replace(links.stationery);
+		}
+	};
+
 	const wireGlobalLinks = () => {
 		document.querySelectorAll("a[href]").forEach((anchor) => {
 			const raw = anchor.getAttribute("href") || "";
 			if (raw.trim().startsWith("#!")) {
-				const variant = pickVariant(0);
-				anchor.href = productLinkFor(variant.id);
+				anchor.addEventListener("click", (event) => {
+					event.preventDefault();
+					const variant = pickVariant(0);
+					window.location.href = productLinkFor(variant.id);
+				});
 			}
 		});
 
@@ -138,6 +150,20 @@
 		if (cartBack) {
 			cartBack.href = links.stationery;
 		}
+
+		document.querySelectorAll(".stationery__product__link").forEach((card) => {
+			const image = card.querySelector("img");
+			if (!image || !image.src) {
+				return;
+			}
+			const matched = productVariants.find((variant) => image.src.includes(variant.img.split("/").pop()));
+			if (!matched) {
+				return;
+			}
+			card.addEventListener("click", () => {
+				window.location.href = productLinkFor(matched.id);
+			});
+		});
 	};
 
 	const initHeroSlider = () => {
@@ -176,7 +202,7 @@
 			if (timerId) {
 				clearInterval(timerId);
 			}
-			timerId = setInterval(nextSlide, 5000);
+			timerId = setInterval(nextSlide, 1000);
 		};
 
 		setActive(activeIndex);
@@ -209,10 +235,63 @@
 		revealTargets.forEach((el) => observer.observe(el));
 	};
 
+	const initStationeryBannerSlider = () => {
+		const banner = document.querySelector(".stationery__banner");
+		if (!banner || stationeryBannerImages.length === 0) {
+			return;
+		}
+		const slideDuration = 4000;
+		const animDuration = 1200;
+		let index = 0;
+
+		const createSlide = () => {
+			const slide = document.createElement("div");
+			slide.className = "stationery__banner-slide";
+			banner.prepend(slide);
+			return slide;
+		};
+
+		const current = createSlide();
+		const next = createSlide();
+
+		const setImage = (el, imgIndex) => {
+			el.style.backgroundImage = `url(${stationeryBannerImages[imgIndex]})`;
+		};
+
+		setImage(current, index);
+		current.classList.add("is-active");
+
+		const runSlide = () => {
+			const nextIndex = (index + 1) % stationeryBannerImages.length;
+			setImage(next, nextIndex);
+			next.classList.remove("is-exit-right");
+			next.classList.remove("is-active");
+			current.classList.remove("is-exit-right");
+
+			requestAnimationFrame(() => {
+				requestAnimationFrame(() => {
+					current.classList.add("is-exit-right");
+					next.classList.add("is-active");
+				});
+			});
+
+			setTimeout(() => {
+				current.classList.remove("is-active");
+				current.classList.remove("is-exit-right");
+				setImage(current, nextIndex);
+				index = nextIndex;
+			}, animDuration);
+		};
+
+		setInterval(runSlide, slideDuration);
+	};
+
 	const init = () => {
+		redirectToStationery();
 		wireGlobalLinks();
 		updateProductPage();
 		initHeroSlider();
+		initStationeryBannerSlider();
 		initReveal();
 	};
 
