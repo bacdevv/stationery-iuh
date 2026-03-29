@@ -21,11 +21,12 @@
 		<link rel="stylesheet" href="./assets/css/typography.css" />
 		<link rel="stylesheet" href="./assets/css/common.css" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
 	</head>
 	<body>
 		<div class="wrapper">
 			<!-- Header -->
-			<header class="header">
+			<header class="header header--home">
 				<div class="header-nav">
 					<figure>
 						<img class="logo" src="./assets/img/logo.svg" alt="" />
@@ -52,6 +53,50 @@
 					<div class="header__shopping-cart">
 						<figure class="header__img-wrap"><img src="./assets/icons/header-icon-cart.svg" alt="" /></figure>
 						<p class="header__shopping-amount">AED 24.98</p>
+					</div>
+				</div>
+
+				<div class="hero-slider" data-slider="home">
+					<div class="hero-slide hero-slide--one is-active">
+						<div class="hero-slide__content">
+							<p class="hero-slide__eyebrow">Back to school</p>
+							<h1 class="hero-slide__title">Supplies that spark focus</h1>
+							<p class="hero-slide__desc">Fresh stationery picks with smart prices and fast delivery.</p>
+							<a href="#!" class="btn-1 hero-slide__cta">Shop now</a>
+						</div>
+						<figure class="hero-slide__media">
+							<img src="./assets/img/stationery-landing-page-white-pen.jpg" alt="Stationery highlight" />
+						</figure>
+					</div>
+
+					<div class="hero-slide hero-slide--two">
+						<div class="hero-slide__content">
+							<p class="hero-slide__eyebrow">Art & craft</p>
+							<h1 class="hero-slide__title">Color your next idea</h1>
+							<p class="hero-slide__desc">Brushes, paints, and tools curated for creators.</p>
+							<a href="#!" class="btn-1 hero-slide__cta">Explore collection</a>
+						</div>
+						<figure class="hero-slide__media">
+							<img src="./assets/img/stationery-landing-page-blue-pen.jpg" alt="Art supplies" />
+						</figure>
+					</div>
+
+					<div class="hero-slide hero-slide--three">
+						<div class="hero-slide__content">
+							<p class="hero-slide__eyebrow">Work essentials</p>
+							<h1 class="hero-slide__title">Organize every detail</h1>
+							<p class="hero-slide__desc">Clean layouts, bold notes, and premium tools.</p>
+							<a href="#!" class="btn-1 hero-slide__cta">See products</a>
+						</div>
+						<figure class="hero-slide__media">
+							<img src="./assets/img/stationery-landing-page-dark-green-pen.jpg" alt="Office supplies" />
+						</figure>
+					</div>
+
+					<div class="hero-slider__controls">
+						<button class="hero-dot is-active" type="button" data-slide="0" aria-label="Slide 1"></button>
+						<button class="hero-dot" type="button" data-slide="1" aria-label="Slide 2"></button>
+						<button class="hero-dot" type="button" data-slide="2" aria-label="Slide 3"></button>
 					</div>
 				</div>
 			</header>
