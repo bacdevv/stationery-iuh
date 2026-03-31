@@ -250,8 +250,8 @@
 
 .stationery__heading {
 	text-align: center;
-	margin-top: 15rem;
-	margin-bottom: 4.6rem;
+	margin-top: 22rem;
+	margin-bottom: 3rem;
 	font-size: 2.5rem;
 	font-style: normal;
 	font-weight: 500;
@@ -260,7 +260,7 @@
 }
 
 .stationery__title {
-	margin-bottom: 6.4rem;
+	
 	font-size: 2rem;
 	font-style: normal;
 	font-weight: 700;
@@ -275,10 +275,11 @@
 }
 
 .stationery__best-selling__list {
+	margin-top: 4rem;
 	display: flex;
 	overflow-x: auto;
 	overflow-y: hidden;
-	height: 30rem;
+	height: 32rem;
 	align-items: flex-start;
 	gap: 4.5rem;
 }
@@ -287,16 +288,10 @@
 	width: 15.1875rem;
 	height: 17.8125rem;
 	position: relative;
+	
 }
 
-.stationery__Xpress__sticker {
-	position: absolute;
-	margin-left: 1.5rem;
-	background-color: var(--green-color);
-	color: var(--bw-color-1);
-	padding: 0.8rem;
-	border-radius: 0 0 0.8rem 0.8rem;
-}
+
 
 .stationery__label--green {
 	font-size: 1rem;
@@ -404,16 +399,14 @@
 }
 
 .stationery__Explore-popular-categories {
-	height: 75rem;
+	margin-top: 5.25rem;
+	margin-bottom: 7rem;
 }
 
 .stationery__Explore-popular-categories__tittle-group {
 	display: flex;
 	justify-content: space-between;
-}
-
-.stationery__Explore-popular-categories__tittle {
-	margin-bottom: 5.25rem;
+	margin-top: 9.3rem;
 }
 
 .stationery__Explore-popular-categories__see-all {
@@ -434,16 +427,16 @@
 }
 
 .stationery__Explore-popular-categories__product-group {
-	display: inline-flex;
-	align-items: flex-start;
-	gap: 7.2rem;
-	margin-bottom: 8rem;
+	display: flex;
+	gap: 4.5rem;
+	margin-bottom: 12rem;
 	justify-content: space-between;
+	
 }
 
 .stationery__Explore-popular-categories__product-box {
-	width: 13rem;
-	height: 32rem;
+	width: 13.48113rem;
+	height: 20rem;
 }
 
 .stationery__Explore-popular-categories__product {
@@ -461,6 +454,7 @@
 }
 
 .stationery__Catalog {
+	margin-top: 3rem;
 	display: flex;
 	align-items: flex-start;
 	gap: 4rem;
@@ -838,7 +832,7 @@
 }
 
 .order-summary__title::after {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -864,7 +858,7 @@
 }
 
 .order-summary__shipping-icon::after {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 0.55rem;
 	top: 0.55rem;
@@ -944,7 +938,7 @@
 }
 
 .order-summary__option-input:checked + .order-summary__option-dot::after {
-	content: "";
+	content: '';
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -1056,7 +1050,7 @@
 }
 
 .order-summary__together-input:checked + .order-summary__together-box::after {
-	content: "";
+	content: '';
 	position: absolute;
 	left: 0.4rem;
 	top: 0.45rem;
