@@ -36,6 +36,12 @@ body {
 	color: #000;
 }
 
+.btn:hover {
+	background: var(--primary-color-1);
+	color: #fff !important;
+	transition: all 0.3s ease;
+}
+
 .main-content {
 	width: 153.5rem;
 	margin-left: auto;
@@ -213,6 +219,8 @@ body {
 	right: 0;
 	top: 0;
 	cursor: pointer;
+	width: 150px;
+	text-align: center;
 }
 
 .footer__delivery-charge {

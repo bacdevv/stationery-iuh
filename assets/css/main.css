@@ -1713,7 +1713,15 @@
 	color: var(--bw-color-4);
 }
 
-.information__btn {
+
+.information__btn{
+	font-family: var(--primary-font);
+	font-size: 1.5rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 2.25rem;
+	letter-spacing: 0.03rem;
+	color: var(--primary-color-3);
 	display: inline-flex;
 	width: 14rem;
 	height: 4.5rem;
@@ -1725,16 +1733,6 @@
 	justify-content: center;
 	margin-top: 1.85rem;
 	margin-left: 24.5rem;
-}
-
-.information__btn--text {
-	font-family: var(--primary-font);
-	font-size: 1.5rem;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 2.25rem;
-	letter-spacing: 0.03rem;
-	color: var(--primary-color-3);
 }
 
 .information__shippingAddr--text {

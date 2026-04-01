@@ -100,12 +100,7 @@
 		}
 	};
 
-	const redirectToStationery = () => {
-		const isRoot = path === "/" || path === "";
-		if (!isInPages && (isRoot || path.endsWith("index.html"))) {
-			window.location.replace(links.stationery);
-		}
-	};
+	const redirectToStationery = () => {};
 
 	const wireGlobalLinks = () => {
 		document.querySelectorAll("a[href]").forEach((anchor) => {

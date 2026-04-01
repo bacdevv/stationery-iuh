@@ -169,6 +169,11 @@
 		
 	}
 
+	.stationery__Explore-popular-categories__product {
+		width: 100%;
+		object-fit: cover;
+	}
+
 }
 
 @media (max-width: 76.8rem) {
