@@ -197,7 +197,7 @@
 			if (timerId) {
 				clearInterval(timerId);
 			}
-			timerId = setInterval(nextSlide, 1000);
+			timerId = setInterval(nextSlide, 500);
 		};
 
 		setActive(activeIndex);
