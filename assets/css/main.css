@@ -260,7 +260,6 @@
 }
 
 .stationery__title {
-	
 	font-size: 2rem;
 	font-style: normal;
 	font-weight: 700;
@@ -288,10 +287,15 @@
 	width: 15.1875rem;
 	height: 17.8125rem;
 	position: relative;
-	
 }
 
+.main--product {
+	margin-top: 50px;
+}
 
+.product__detail {
+	gap: 100px;
+}
 
 .stationery__label--green {
 	font-size: 1rem;
@@ -431,12 +435,13 @@
 	gap: 4.5rem;
 	margin-bottom: 12rem;
 	justify-content: space-between;
-	
 }
 
 .stationery__Explore-popular-categories__product-box {
 	width: 13.48113rem;
 	height: 20rem;
+	display: block;
+	cursor: pointer;
 }
 
 .stationery__Explore-popular-categories__product {
@@ -832,7 +837,7 @@
 }
 
 .order-summary__title::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
@@ -858,7 +863,7 @@
 }
 
 .order-summary__shipping-icon::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0.55rem;
 	top: 0.55rem;
@@ -938,7 +943,7 @@
 }
 
 .order-summary__option-input:checked + .order-summary__option-dot::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -1050,7 +1055,7 @@
 }
 
 .order-summary__together-input:checked + .order-summary__together-box::after {
-	content: '';
+	content: "";
 	position: absolute;
 	left: 0.4rem;
 	top: 0.45rem;
@@ -1713,8 +1718,7 @@
 	color: var(--bw-color-4);
 }
 
-
-.information__btn{
+.information__btn {
 	font-family: var(--primary-font);
 	font-size: 1.5rem;
 	font-style: normal;

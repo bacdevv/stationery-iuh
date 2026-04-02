@@ -173,6 +173,7 @@ body {
 
 /* ================ Footer ================ */
 .footer {
+	margin-top: 50px;
 	padding: 6rem 7rem 0;
 	background: #f4f5f8;
 }
